@@ -1,0 +1,17 @@
+<div class="bg-warning p-3 w-75 m-auto" *ngIf="phaseName == 'initiation' && sdlcCopy.initiation.length > 0">
+    <h2>project title: {{singlePhaseObject.project_title}}</h2>
+    <h2>start date: {{singlePhaseObject.project_start_date}}</h2>
+    <h2>end date: {{singlePhaseObject.project_end_date}}</h2>
+    <h2>project objectives: {{singlePhaseObject.project_objectives}}</h2>
+    <h2>project manager: {{singlePhaseObject.project_manager}}</h2>
+    <h2>project information: {{singlePhaseObject.project_information}}</h2>
+    <h2>project scope statements: {{singlePhaseObject.project_scope_statements}}</h2>
+</div>
+
+<div class="bg-warning p-3 w-75 m-auto" *ngIf="phaseName == 'analysis' && sdlcCopy.analysis.length > 0">
+    <h2>introduction: {{singlePhaseObject.introduction}}</h2>
+    <h2>purpose of software being developed: {{singlePhaseObject.purpose_of_software_being_developed}}</h2>
+    <h2>intended audience: {{singlePhaseObject.intended_audience}}</h2>
+    <h2>overall description of the software: {{singlePhaseObject.overall_description_of_the_software}}</h2>
+    <h2>system features and requirements: {{singlePhaseObject.system_features_and_requirements}}</h2>
+</div>

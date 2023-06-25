@@ -1,0 +1,78 @@
+<div class="pt-5"></div>
+
+
+<div class="p-2 w-75 m-auto position-relative parentDiv">
+
+    <div class="m-auto w-75">
+      <h2 class="text-primary text-center">fill data</h2>
+      
+  
+      <div class="py-3"></div>
+
+      <div *ngIf="phaseName == 'initiation'">
+        <input type="text" class="form-control" placeholder="project title" [(ngModel)]="project_title">
+  
+        <div class="py-3"></div>
+  
+        <input type="date" class="form-control" placeholder="project start date" [(ngModel)]="project_start_date">
+
+        <div class="py-3"></div>
+
+        <input type="date" class="form-control" placeholder="project end date" [(ngModel)]="project_end_date">
+  
+        <div class="py-3"></div>
+  
+        <input type="text" class="form-control" placeholder="project ojectives" [(ngModel)]="project_objectives">
+
+        <div class="py-3"></div>
+
+        <input type="text" class="form-control" placeholder="project manager" [(ngModel)]="project_manager">
+
+        <div class="py-3"></div>
+
+        <input type="text" class="form-control" placeholder="project information" [(ngModel)]="project_information">
+
+        <div class="py-3"></div>
+
+        <input type="text" class="form-control" placeholder="project scope statements" [(ngModel)]="project_scope_statements">
+
+        <div class="py-3"></div>
+
+        <button class="btn btn-primary" (click)="updateInitiationPhase()">update</button>
+
+      </div>
+
+      <div *ngIf="phaseName == 'analysis'">
+        <input type="text" class="form-control" placeholder="introduction" [(ngModel)]="introduction">
+
+        <div class="py-3"></div>
+
+        <input type="text" class="form-control" placeholder="purpose of software being developed" [(ngModel)]="purpose_of_software_being_developed">
+
+        <div class="py-3"></div>
+
+        <input type="text" class="form-control" placeholder="intended audience" [(ngModel)]="intended_audience">
+
+        <div class="py-3"></div>
+
+        <input type="text" class="form-control" placeholder="overall description of the software" [(ngModel)]="overall_description_of_the_software">
+
+        <div class="py-3"></div>
+
+        <input type="text" class="form-control" placeholder="system features and requirements" [(ngModel)]="system_features_and_requirements">
+
+        <div class="py-3"></div>
+
+        <button class="btn btn-primary" (click)="updateAnalysisPhase()">update</button>
+
+      </div>
+      
+    </div>
+
+    <div class="py-3"></div>
+
+    <p class="allInputsAreRequired text-center">All inputs are required</p>
+
+</div>
+
+<div class="py-5 my-5"></div>

@@ -1,0 +1,49 @@
+<div class="w-75 m-auto">
+    <div class="row">
+      <div class="col-xl-6">
+        <div class="p-2 my-3 bg-success">
+          <h2 class="text-white">initiation</h2>
+  
+          <div class="py-3"></div>
+  
+          <div class="mb-4 p-2" *ngFor="let a of sdlcCopy.initiation" style="border: 2px solid black;">
+            <a routerLink="singlePhaseDetails/{{a.id}}/{{a.phaseName}}" class="text-white"><h2>title: {{a.project_title}}</h2></a>
+  
+            <div class="py-2"></div>
+  
+            <div class="d-flex" style="justify-content: space-around;">
+              <a routerLink="/updateSDCL/{{a.id}}/{{a.phaseName}}"><button class="btn btn-primary">update</button></a>
+              <!--<a><button class="btn btn-primary" [routerLink]="['/updateSDCL',a.id,a.phaseName]">update</button></a>-->
+              <button class="btn btn-danger" (click)="deletePhase(a.id , a.phaseName)">delete</button>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+
+
+      <div class="col-xl-6">
+        <div class="p-2 my-3 bg-warning">
+          <h2>analysis</h2>
+  
+          <div class="py-3"></div>
+  
+          <div class="mb-4 p-2" *ngFor="let a of sdlcCopy.analysis" style="border: 2px solid black;">
+            <a routerLink="singlePhaseDetails/{{a.id}}/{{a.phaseName}}" class="text-white"><h2>introduction: {{a.introduction}}</h2></a>
+
+            <div class="py-2"></div>
+  
+            <div class="d-flex" style="justify-content: space-around;">
+              <!--<a routerLink="/updateSDCL/{{a.id}}/{{a.phaseName}}"><button class="btn btn-primary">update</button></a>-->
+              <button class="btn btn-primary" [routerLink]="['/updateSDCL',a.id,a.phaseName]">update</button>
+              <button class="btn btn-danger" (click)="deletePhase(a.id , a.phaseName)">delete</button>
+            </div>
+  
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>

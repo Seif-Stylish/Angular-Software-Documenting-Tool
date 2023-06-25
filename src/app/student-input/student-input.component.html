@@ -1,0 +1,47 @@
+<div class="my-5"></div>
+
+
+<div class="bg-warning p-2 w-75 m-auto">
+
+  <div class="m-auto w-75">
+    <h2 class="text-primary text-center">fill data</h2>
+
+    <div class="py-3"></div>
+
+    <input type="text" class="form-control" placeholder="name" [(ngModel)] ="userName">
+
+    <div class="py-3"></div>
+
+    <input type="text" class="form-control" placeholder="college" [(ngModel)] ="college">
+    
+    <div class="py-3"></div>
+
+    <input type="text" class="form-control" placeholder="department" [(ngModel)] ="department">
+
+    <div class="py-3"></div>
+
+    <button class="btn btn-primary" (click)="addStudent()">add student</button>
+  </div>
+
+  <div class="py-3"></div>
+</div>
+
+
+<div class="py-3"></div>
+<!--
+<table class="table" *ngIf="allStudentsArray.length > 0">
+  <thead>
+    <th>name</th>
+    <th>department</th>
+    <th>college</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of allStudentsArray">
+      <td>{{i.name}}</td>
+      <td>{{i.college}}</td>
+      <td>{{i.department}}</td>
+    </tr>
+  </tbody>
+</table>
+-->
+
